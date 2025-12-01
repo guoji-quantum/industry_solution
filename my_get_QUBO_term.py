@@ -1,5 +1,4 @@
 '''
-Created by Kirihara on 2024/3/20
 该程序用于 计算二次项系数、线性系数、常数项
 '''
 
@@ -52,5 +51,6 @@ def get_QUBO_term(n, m, inst_L, a, b):
 
     # 计算附加项
     c = A * n
+
 
     return  Q, g, c
