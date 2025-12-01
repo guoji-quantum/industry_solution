@@ -1,5 +1,4 @@
 '''
-Created by Kirihara on 2024/3/20
 该程序用于获取任意IPMSP实例的1-level QAOA解析表达式
 '''
 
@@ -133,3 +132,4 @@ def QAOA_F_ray(Q, g):
 
         return E1 + E2
     return F
+
