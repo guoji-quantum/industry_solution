@@ -1,5 +1,4 @@
 '''
-Created by Kirihara on 2024/3/20
 该程序用于获取能量值
 '''
 import numpy as np
@@ -23,4 +22,5 @@ def JS_obj (state, Q, g, c):
         cost = fun(x_sol)
     except:
         cost = 0
+
     return cost
