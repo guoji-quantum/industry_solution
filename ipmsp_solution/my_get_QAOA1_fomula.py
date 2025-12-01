@@ -1,9 +1,8 @@
+import numpy as np
+
 '''
 该程序用于获取任意IPMSP实例的1-level QAOA解析表达式
 '''
-
-import numpy as np
-
 # 算子系数
 def A_ij(Q, g, i, j):
     return (Q[i][j] + Q[j][i])/4
@@ -132,3 +131,4 @@ def QAOA_F_ray(Q, g):
 
         return E1 + E2
     return F
+
