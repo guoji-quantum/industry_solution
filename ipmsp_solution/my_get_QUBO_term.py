@@ -1,11 +1,9 @@
-'''
-该程序用于 计算二次项系数、线性系数、常数项
-'''
-
 import numpy as np
 
-
 def get_QUBO_term(n, m, inst_L, a, b):
+    '''
+    该程序用于 计算二次项系数、线性系数、常数项
+    '''
     # 定义两个列向量
     # LM(m)：第i个machine上全部job的运行时间
     L_M_list = [[] for i in range(m)]
@@ -51,5 +49,6 @@ def get_QUBO_term(n, m, inst_L, a, b):
 
     # 计算附加项
     c = A * n
+
 
     return  Q, g, c
